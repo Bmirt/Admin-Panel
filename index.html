@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__firstDiv">
+            <i class="fas fa-bars"></i>
+            <div class="header__firstDiv__techub">Techub</div>
+        </div>
+        <div class="header__secondDiv">
+            <button class="header__secondDiv--button buttonRemove">სტუდენტების წაშლა</button>
+            <button class="header__secondDiv--button buttonAdd">სტუდენტის დამატება</button>
+        </div>
+    </header>
+    <main class="main">
+        <aside class="aside--left">
+            <ul class="list">
+                <li class="listItem"><span class="firstSpan">სტუდენტების რაოდენობა</span><span class="secondSpan" id="studentCount">0</span></li>
+                <li class="listItem"><span class="firstSpan">საშუალო ქულა</span><span class="secondSpan" id="averageScore">0</span></li>
+            </ul>
+        </aside>
+        <section class="center">
+            <div class="center__center">
+                <table class="table">
+                    <tr class="head_row">
+                        <thead>
+                            <tr>
+                                <th>სახელი, გვარი</th>
+                                <th>ორშაბათი</th>
+                                <th>ოთხშაბათი</th>
+                                <th>პარასკევი</th>
+                                <th>კვირა</th>
+                                <th>წაშლა</th>
+                            </tr>
+                        </thead>
+                        <tbody class="StudentsList">                     
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
